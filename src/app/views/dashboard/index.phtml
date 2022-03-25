@@ -1,0 +1,16 @@
+<h3>Dashboard</h3>
+<br>
+<p>
+    <?php echo $this->session->get('userE'); ?>
+    <?php echo "<br>";?>
+    <?php echo $this->session->get('userP'); ?><br>
+    <?php echo $this->time; ?>
+</p>
+<?php echo $this->tag->form("login/logout"); ?>
+<?php echo "<div style='float: right;'>"; ?>
+<?php echo $this->tag->submitButton("Logout"); ?>
+<?php echo "</div>"; ?>
+</form>
+
+
+

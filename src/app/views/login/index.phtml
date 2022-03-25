@@ -1,0 +1,28 @@
+<h2>Login using this form</h2>
+
+<?php echo $this->tag->form(""); ?>
+
+    <p>
+        <label for="email">Email</label>
+        <?php echo $this->tag->textField(["name" => "email", "placeholder" => "Enter email"]); ?>
+    </p>
+
+    <p>
+        <label for="password">Password</label>
+        <?php echo $this->tag->textField(["name" => "password", "placeholder" => "Enter password"]); ?>
+    </p>
+
+    <p>
+        <input type="checkbox" name="remember" value="1">
+        <label for="checkbox">Remember Me</label>
+    </p>
+
+    <p>
+        <?php echo $this->tag->submitButton("Login"); ?>
+    </p>
+
+    <p>
+        <?php echo $this->session->get('login'); ?>
+    </p>
+
+</form>
